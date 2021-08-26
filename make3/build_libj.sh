@@ -24,9 +24,9 @@ compiler=$(readlink -f $(command -v $CC) 2> /dev/null || echo $CC)
 echo "CC=$CC"
 echo "compiler=$compiler"
 
-OPENMP=" -fopenmp "
-LDOPENMP=" -fopenmp "
-common=" $OPENMP -Mnoopenmp -fPIC -O2 -fvisibility=hidden -fno-strict-aliasing -Mint128 -Mm128 -Mllvm=10.0 "
+# OPENMP=" -fopenmp "
+# LDOPENMP=" -fopenmp "
+common=" $OPENMP -v -Mnoopenmp -fPIC -O2 -fvisibility=hidden -fno-strict-aliasing -Mint128 -Mm128 "
 
 common="$common -DSLEEF=1"
 
