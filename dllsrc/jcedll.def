@@ -1,0 +1,7 @@
+EXPORTS
+				JInit
+				JDo
+				JSM
+				JFree
+				Jga
+				JGetLocale
